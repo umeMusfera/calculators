@@ -1,24 +1,61 @@
-.calc{
+.calc {
     background-color: gray;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding: 10px;
-    
+    margin:auto;
+    width: 25x;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures the border-radius is applied to content inside */
 }
 
-.button{
+
+/* Styling the buttons */
+.button {
     color: bisque;
     border: 2px solid bisque;
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     width: 60px;
-    white-space:normal;
+    white-space: normal;
     margin: 5px;
     border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-#firstinp{
+
+/* Button hover effect */
+.button:hover {
+    background-color: bisque;
+    color: black;
+    transform: scale(1.1);
+    border-color: black;
+}
+
+/* Input field styling */
+#firstinp {
     width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: right;
 }
-#lastinp{
+
+#lastinp {
     width: 210px;
+}
+
+/* Centering the text in the form */
+form {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    
+
+    .button {
+        flex: 1 0 20%; /* Allows more buttons per row */
+        position:static;
+    }
 }
